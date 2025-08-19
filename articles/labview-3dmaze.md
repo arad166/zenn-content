@@ -1,6 +1,6 @@
 ---
-title: "test"
-emoji: "🦔"
+title: "LabVIEWで3D迷路を作る"
+emoji: "🤖"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: []
 published: false
