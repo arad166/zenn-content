@@ -7,6 +7,8 @@ published: true
 ---
 # 要約
 コネクト4に重力操作を加えた自作ゲームと、そのゲーム用のAIを作成しました。
+[これです](https://arad166.github.io/gravity-controllable-connect4/)
+
 ![](/images/gravity-controllable-connect4/game.gif)
 *ゲーム画面*
 
