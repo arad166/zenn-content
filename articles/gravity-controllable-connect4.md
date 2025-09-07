@@ -34,11 +34,9 @@ published: false
 
 重力を変更すると、盤上のすべてのコマがその重力方向に落下します。また、新しくコマを配置する際は、盤面の左端から入れることになります。
 コマはその重力方向に従って落下します。
+このルールだと自分のコマと相手のコマが同時に4つ揃うことがありますが、その場合は引き分けとします。
 
-### 勝敗の判定
-- 4つ揃った方が勝利
-- 同時に4つ揃った場合は引き分け
-
+ルールの簡単な説明は以上です。
 [こちら](https://arad166.github.io/gravity-controllable-connect4/)からプレイできるので、是非遊んでみてください。
 
 # ゲームAIの作成
@@ -100,7 +98,7 @@ export const chooseCpuActionNormal = (ctx: CpuContext): CpuAction | null => {
   return best;
 };
 ```
-```rolloutsPerAction```はシミュレーション回数で、```50```に設定しています。もう少し大きくすることもできるのですが、強くなりすぎても面白くないのでこの値にしています。
+```rolloutsPerAction```はシミュレーション回数で、```50```に設定しています。もう少し大きくすることもできますが、強くなりすぎても面白くないのでこの値にしています。
 
 ## 🦁Strong の実装
 
@@ -124,5 +122,6 @@ export const chooseCpuActionNormal = (ctx: CpuContext): CpuAction | null => {
 # 感想
 
 Strongが強すぎて私は全然勝てません。重力操作は人類には早すぎるのかもしれない。
+
 
 また、今回始めてReactを使ってみました。結構面白かったです（実装はほぼ全て Cursor Pro に任せましたが）。
