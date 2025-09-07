@@ -7,6 +7,8 @@ published: false
 ---
 # 要約
 コネクト4に重力操作を加えた自作ゲームと、そのゲーム用のAIを作成しました。
+![](/images/gravity-controllable-connect4/game.gif)
+*ゲーム画面*
 
 # ゲームの概要
 
@@ -36,7 +38,9 @@ published: false
 始めに作ったのは人間vs人間のモードでしたが、せっかくなので人間vsCPUのモードも作ることにしました。
 CPUのレベルは"Weak"、"Normal"、"Strong"の3段階として、それぞれ別の方法で実装しています。
 尚、NormalとStrongの実装は下記の書籍を参考にしました。
->ゲームで学ぶ探索アルゴリズム実践入門～木探索とメタヒューリスティクス, 青木栄太, https://amzn.asia/d/hB4XHNZ
+
+**参考文献**
+- 青木栄太 (2023). 『ゲームで学ぶ探索アルゴリズム実践入門～木探索とメタヒューリスティクス』. 技術評論社. [Amazon](https://amzn.asia/d/hB4XHNZ)
 
 ## 🐇Weak の実装
 
@@ -87,7 +91,7 @@ export const chooseCpuActionNormal = (ctx: CpuContext): CpuAction | null => {
   return best;
 };
 ```
-<code>rolloutsPerAction</code>はシミュレーション回数で、<code>50</code>に設定しています。もう少し大きくすることもできるのですが、強くなりすぎても面白くないのでこの値にしています。
+```rolloutsPerAction```はシミュレーション回数で、```50```に設定しています。もう少し大きくすることもできるのですが、強くなりすぎても面白くないのでこの値にしています。
 
 ## 🦁Strong の実装
 
