@@ -3,7 +3,7 @@ title: "重力操作可能なコネクト4のゲームAI作成"
 emoji: "🔴"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: []
-published: false
+published: true
 ---
 # 要約
 コネクト4に重力操作を加えた自作ゲームと、そのゲーム用のAIを作成しました。
@@ -122,6 +122,5 @@ export const chooseCpuActionNormal = (ctx: CpuContext): CpuAction | null => {
 # 感想
 
 Strongが強すぎて私は全然勝てません。重力操作は人類には早すぎるのかもしれない。
-
 
 また、今回始めてReactを使ってみました。結構面白かったです（実装はほぼ全て Cursor Pro に任せましたが）。
