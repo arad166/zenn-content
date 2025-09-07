@@ -2,7 +2,7 @@
 title: "重力操作可能なコネクト4のゲームAI作成"
 emoji: "🔴"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: []
+topics: ["アルゴリズム","ゲームAI"]
 published: true
 ---
 # 要約
