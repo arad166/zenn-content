@@ -1,5 +1,5 @@
 ---
-title: "重力操作可能なコネクト4のゲームAIを作る"
+title: "重力操作可能なコネクト4のゲームAI作成"
 emoji: "🔴"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: []
