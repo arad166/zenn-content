@@ -14,7 +14,7 @@ Yu Gothic UI SemiboldのU+03A9 (Greek Capital Letter Omega) にиが登録され
 
 ![](/images/omega-to-cyrillic/image1.png)
 
-ChatGPTがこんなことを言っていました。иの部分は本来抵抗の単位なのでΩが正しいのですが、ChatGPTはиと言っています。なぜこうなるのか不思議に思ったので調べました。
+ChatGPTがこんなことを言っていました。иの部分は本来抵抗の単位なのでΩが正しいですが、ChatGPTはиと言っています。なぜこうなるのか不思議に思ったので調べました。
 
 # 考察
 
@@ -25,7 +25,7 @@ ChatGPTがこんなことを言っていました。иの部分は本来抵抗�
 ![](/images/omega-to-cyrillic/greek.png)
 
 おや、Ωが正しく出力されています。他の文字も良さそうです。
-冒頭の画像では太字で出力されていたので、太字で全ての文字を出力してみます。
+冒頭の画像では太字で出力されていたので、全ての文字を太字で出力してみます。
 
 ![](/images/omega-to-cyrillic/greek-bold.png)
 
@@ -47,9 +47,9 @@ ChatGPTがこんなことを言っていました。иの部分は本来抵抗�
 font-family: ui-sans-serif, -apple-system, system-ui, Segoe UI, Helvetica, Apple Color Emoji, Arial, sans-serif, Segoe UI Emoji, Segoe UI Symbol;
 ```
 
-これが該当部分です。とりあえず各フォントでΩを表示してみます。
+これが該当部分です。とりあえず各フォントで通常のΩと太字のΩを並べて表示してみます。
 
-<details><summary>html(やや長いので折り畳み)</summary>
+::: details <summary>html(やや長いので折り畳み)</summary>
 
 ```html
 <!DOCTYPE html>
@@ -77,7 +77,7 @@ font-family: ui-sans-serif, -apple-system, system-ui, Segoe UI, Helvetica, Apple
 </body>
 </html>
 ```
-</details>
+:::
 
 すると、以下のようにsystem-uiを太字にした場合のみΩがиになりました。長いので上3つだけ載せましたが、system-ui以外は正しく表示されました。
 ![](/images/omega-to-cyrillic/omega.png)
@@ -86,7 +86,7 @@ system-uiはOSで標準的に使用されているシステムフォントを指
 
 Yu Gothic UIを指定して同様にΩの太字を表示すると、確かにиになりました。
 
-<details><summary>html(先程のコードの末尾にYu Gothic UIを追加)</summary>
+::: details <summary>html(先程のコードの末尾にYu Gothic UIを追加)</summary>
 
 ```html
 <!DOCTYPE html>
@@ -114,7 +114,7 @@ Yu Gothic UIを指定して同様にΩの太字を表示すると、確かにи�
 </body>
 </html>
 ```
-</details>
+:::
 
 ![](/images/omega-to-cyrillic/Yu-Gothic-UI.png)
 
