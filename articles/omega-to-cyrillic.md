@@ -49,7 +49,7 @@ font-family: ui-sans-serif, -apple-system, system-ui, Segoe UI, Helvetica, Apple
 
 これが該当部分です。とりあえず各フォントで通常のΩと太字のΩを並べて表示してみます。
 
-::: details <summary>html(やや長いので折り畳み)</summary>
+::: details html(やや長いので折り畳み)
 
 ```html
 <!DOCTYPE html>
@@ -86,7 +86,7 @@ system-uiはOSで標準的に使用されているシステムフォントを指
 
 Yu Gothic UIを指定して同様にΩの太字を表示すると、確かにиになりました。
 
-::: details <summary>html(先程のコードの末尾にYu Gothic UIを追加)</summary>
+::: details html(先程のコードの末尾にYu Gothic UIを追加)
 
 ```html
 <!DOCTYPE html>
