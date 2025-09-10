@@ -2,7 +2,7 @@
 title: "ChatGPTがΩのことをиだと言っている"
 emoji: "🇬🇷"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ["ChatGPT","font"]
+topics: ["ChatGPT","font","frontend"]
 published: true
 ---
 # 要約
@@ -23,11 +23,13 @@ ChatGPTがこんなことを言っていました。иの部分は本来抵抗�
 とりあえずChatGPTに色々出力させて挙動を観察します。まずは、ギリシャ文字を全て出力してみましょう。
 
 ![](/images/omega-to-cyrillic/greek.png)
+*「ギリシャ文字を全て出力してください」に対するChatGPTの回答*
 
 おや、Ωが正しく出力されています。他の文字も良さそうです。
 冒頭の画像では太字で出力されていたので、全ての文字を太字で出力してみます。
 
 ![](/images/omega-to-cyrillic/greek-bold.png)
+*「ギリシャ文字を全て太字で出力してください」に対するChatGPTの回答*
 
 今度はΩがиになりました。この現象が起こるのは太字の場合のみのようです。また、他の文字は特に問題ないことも分かりました。
 
@@ -79,8 +81,9 @@ font-family: ui-sans-serif, -apple-system, system-ui, Segoe UI, Helvetica, Apple
 ```
 :::
 
-すると、以下のようにsystem-uiを太字にした場合のみΩがиになりました。長いので上3つだけ載せましたが、system-ui以外は正しく表示されました。
 ![](/images/omega-to-cyrillic/omega.png)
+
+すると、以上のようにsystem-uiを太字にした場合のみΩがиになりました。長いので上3つだけ載せましたが、system-ui以外は正しく表示されました。
 
 system-uiはOSで標準的に使用されているシステムフォントを指定するもので、私の使用しているWindows 11ではYu Gothic UIが使用されているそうです（[ソース](https://tenshoku.mynavi.jp/engineer/guide/articles/ZGXbwxEAACgAC-r4)）。
 
