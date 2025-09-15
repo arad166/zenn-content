@@ -3,7 +3,7 @@ title: "LabVIEWで3D迷路を作る"
 emoji: "🐟"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["LabVIEW","アルゴリズム","ゲーム"]
-published: false
+published: true
 ---
 
 # 0. はじめに
