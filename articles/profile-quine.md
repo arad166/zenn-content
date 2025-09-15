@@ -3,7 +3,7 @@ title: "GitHubプロフィール用のアスキーアートQuineを作った"
 emoji: "🐟"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["ruby","quine","アスキーアート"]
-published: false
+published: true
 ---
 # 作ったもの
 ```ruby:quine.rb
